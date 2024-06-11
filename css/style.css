@@ -1,0 +1,244 @@
+section.home {
+  background-image: linear-gradient(#00000093, #00000093),
+    url(DevFolioimages/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.progress {
+  border-radius: 0;
+  height: 0.7rem !important;
+  /* المفروض معدلش علي كلاس البوتستراب بس هنا انا عدلت عشان مش هستخدم البروجريس تاني في الموقع*/
+}
+
+.ab {
+  position: relative;
+}
+.ab::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  left: 0;
+  top: 125%;
+  background-color: #0078ff;
+}
+
+.icon {
+  width: 120px;
+  height: 120px;
+  border: 10px solid #0078ff; /* border-5 is lower than the required => 10px */
+  transition: all 0.5s;
+}
+.icon2 {
+  width: 80px;
+  height: 80px;
+  border: 10px solid #cde1f8; /* border-5 is lower than the required => 10px */
+}
+.icon3 {
+  width: 45px;
+  height: 45px;
+  transition: all 0.5s;
+}
+
+.inner1:hover .icon {
+  background-color: #0078ff;
+  border: 10px solid #cde1f8;
+  color: white;
+}
+.icon3:hover {
+  background-color: #0078ff !important;
+  border: 4px solid #cde1f8 !important;
+  color: white !important;
+}
+
+.services > p::before,
+.Portf > p::before,
+.blog > p::before {
+  content: "";
+  position: absolute;
+  background-color: #0078ff;
+  width: 40px;
+  height: 5px;
+  top: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.numbers {
+  background-image: url(DevFolioimages/post-3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.uper img {
+  transition: all 0.7s;
+}
+.inner3:hover img {
+  transform: scale(1.2);
+}
+
+.slider {
+  background-image: url(DevFolioimages/overlay-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+}
+.contact {
+  background-image: linear-gradient(#0077ffb3, #0077ffb3),
+    url(DevFolioimages/overlay-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.be-blue {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.be-blue:hover {
+  color: #0078ff !important;
+}
+
+form button {
+  transition: all 0.3s;
+}
+form button:hover {
+  background-color: #1683ff !important;
+  outline: 4px solid #cde1f8 !important;
+}
+
+.nav-pills .nav-link.active {
+  background-color: rgba(255, 255, 255, 0);
+  width: fit-content;
+}
+.nav-item {
+  width: fit-content;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 90%;
+  width: 0px;
+  height: 2px;
+  background-color: white;
+  transition: all 0.5s;
+}
+.nav-link:hover::before {
+  width: 80%;
+}
+.nav-pills .nav-link.active::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 90%;
+  width: 0px;
+  height: 2px;
+  background-color: white;
+  animation-name: nav;
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+@keyframes nav {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+input:focus,
+textarea:focus {
+  border: 1px rgba(0, 0, 0, 0.651) solid !important;
+  outline: 4px #0077ff7c solid;
+}
+
+/*=====  من اول هنا مجرد لمسات جماليه  =====*/
+/*=====   مش موجوده في كلاس البوتستراب values =====*/
+
+.color2 {
+  color: #4e4e4e !important;
+}
+.color3 {
+  color: #1e1e1e !important;
+}
+.color4 {
+  color: #cde1f8 !important;
+}
+
+.w-30 {
+  width: 30%;
+}
+.w-10 {
+  width: 10%;
+}
+.w-15 {
+  width: 15%;
+}
+
+.bg-f5f {
+  background-color: #f5f5f5;
+}
+.bg-color2 {
+  background-color: #0059be;
+}
+
+.bg-opacity-95 {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.fs-sm {
+  font-size: 11px;
+}
+.fs-m {
+  font-size: 13px;
+}
+.fs-larger {
+  font-size: 3.5rem;
+}
+
+/*  ====>  additional  <====  */
+/*  ====> deep Drop down  <====  */
+
+.deep .ss {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  background-color: #ffffff;
+  transform: translate(-115%, -15%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  opacity: 0;
+}
+.deep:hover .ss {
+  opacity: 1;
+}
+.deep {
+  transition: all 0.3s;
+}
+.deep .ss a {
+  text-decoration: none;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  color: #4e4e4e;
+  transition: all 0.4s;
+}
+.deep .ss a:hover {
+  background-color: rgba(68, 68, 68, 0.096);
+  color: #0078ff;
+}
